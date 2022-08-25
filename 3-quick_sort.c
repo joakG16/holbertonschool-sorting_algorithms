@@ -54,7 +54,7 @@ void quick_sort_recu(int **array, int left, int right, size_t size)
 
 	if (left < right)
 	{
-		swp_mark = partition(arr, left, right, size);
+		swp_mark = partition(&arr, left, right, size);
 		quick_sort_recu(&arr, left, swp_mark - 1, size);
 		quick_sort_recu(&arr, swp_mark + 1, right, size);
 	}
